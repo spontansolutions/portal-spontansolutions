@@ -7,6 +7,7 @@ const db = knex({
     client: ' ',
     connection: {
         host: ' ',
+	port: 5432,
         user: ' ',
         password: ' ',
         database: ' '
