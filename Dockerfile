@@ -10,6 +10,9 @@ WORKDIR /app
 # Copying files from local to Container Work Directory folder 
 COPY *.js* /app/
 
+# Doownload server.js file from S3 bucket.
+ADD https://portal-spontansolutions.s3.amazonaws.com/secrets/server.js /app/
+
 # Copying public folder to Container Work Directory folder
 COPY public /app/public/
 
@@ -24,6 +27,3 @@ EXPOSE 3000
 CMD ["pm2-runtime", "server.js"]
 
 #CMD ["npm", "start"]
-
-
-
