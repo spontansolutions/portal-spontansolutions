@@ -26,4 +26,4 @@ EXPOSE 3000
 # Executing command using CMD
 CMD ["pm2-runtime", "server.js"]
 
-CMD ["npm", "start"]
+#CMD ["npm", "start"]
